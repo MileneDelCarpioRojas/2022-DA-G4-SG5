@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Se muesta un horario de un colegio</title>
+    <style>
+
+    table {
+      border-collapse: collapse; <!-- asi los casilleros no se separan uno de otro -->
+      border: 2px solid red;         <!-- el marco de la tabla es de ancho 2 -->
+    }
+
+    td, th {                                   
+      border: 1px solid red;         <!-- las lineas de los casilleros son de 1px de ancho -->
+    }
+
+    td {
+      text-align: center;                <!-- los datos se centran -->
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>School timetable</h1>
+
+    <table>
+      <colgroup>
+        <col span="2">                                 <!-- dos columnas sin estilo -->
+        <col style="background-color:#97DB9A;">
+        <col style="width:42px;">
+        <col style="background-color:#97DB9A;">
+        <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+        <col span="2" style="width:42px;">             <!-- dos columnas con ancho 42 -->
+      </colgroup>
+      <tr>
+        <td></td>
+        <th>Mon</th>
+        <th>Tues</th>
+        <th>Wed</th>
+        <th>Thurs</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+      </tr>
+      <tr>
+        <th>1st period</th>
+        <td>English</td>
+        <td></td>
+        <td></td>
+        <td>German</td>
+        <td>Dutch</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>2nd period</th>
+        <td>English</td>
+        <td>English</td>
+        <td></td>
+        <td>German</td>
+        <td>Dutch</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>3rd period</th>
+        <td></td>
+        <td>German</td>
+        <td>&nbsp;</td>
+        <td>German</td>
+        <td>Dutch</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>4th period</th>
+        <td></td>
+        <td>English</td>
+        <td></td>
+        <td>English</td>
+        <td>Dutch</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+
+  </body>
+</html>
+
+
