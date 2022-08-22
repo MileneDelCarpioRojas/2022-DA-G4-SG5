@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="tarea DA, HTML">
+        <meta name="author" content="SG5">
+        <meta name="description" content="Tarea de DA practica">
+        <title>Formulario de Registro</title>
+        <style>
+            form{
+                margin:0 auto;
+                width: 400px;
+
+                padding: 1em;
+                border: 0.1px solid #CCC;
+                border-radius: 1em;
+                font-family:Arial, Helvetica, sans-serif;
+                /*background-color: #C0C0C0;*/
+            }
+            form li+li{
+                margin-top: 1em;
+            }
+            h1{
+                text-align:center;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            button{
+                margin-left:.5em;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            body{
+                background-image: url("https://www.todofondos.net/wp-content/uploads/1680x1050-Fondo-de-Pantalla-de-Madera-Negra.jpg");
+                color: #CCC;
+            }
+            ul{
+                color: #CCC;
+            }
+            
+            input{
+                border-radius: 0.4em;
+            }
+            p{
+                text-align: center;
+            }
+            label.cuenta{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body style="background-color:black ">
+              
+        <h1 class="a" style="color:white"><small>Crear cuenta</small></h1>
+        <form action="/datos-personales" method="post">
+            <ul style="list-style-type:circle">
+                <li><label style ="color:white;" for="name">Nombre:</label><br>
+                <input type="text" id="name" name="user_name" ></li><br>
+                <li><label style ="color:white;" for="lastname">Primer Apellido:</label><br>  
+                <input type="text" id="last" name="last_name"></li><br>
+                <li><label style ="color:white;" for="secondname">Segundo Apellido:</label><br>  
+                <input type="text" id="second" name="second_name"></li><br>
+                <li><label style ="color:white;" for="password">Contraseña:</label><br>  
+                <input type="password" id="password" name="password"></li><br>
+                <li><label style ="color:white;" for="repeat">Confirmar contraseña:</label><br>  
+                <input type="password" id="repeat" name="repeat"></li><br>
+                <li><label style ="color:white;" for="mail">Correo electrónico:</label><br> 
+                <input type="email" id="mail" name="user_mail"></li><br>
+                <li><label style ="color:white;" for="birthday">Fecha de nacimiento:</label><br>
+                <input type="date" id="birthday" name="birthday"></li><br>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">He leído y acepto los términos y condiciones</label><br><br>
+                <center>
+                <class="button"><button type="submit">Registrarse</button><br><br>
+                <label>¿Ya tienes una cuenta?</label>
+                <p><a href="login">Ingresar</a></p>
+                </center>
+            </ul>
+            
+        </form>
+        <p>
+            <ul>
+            <label style="color:white;" for="group">Integrantes:</label><br>
+            <li>Del Carpio Rojas, Milene Nicole</li>
+            <li>Lopez Sebastiani, Braulio Josue</li>
+            <li>Soto Sanchez, Rosario Milagros</li>
+            <li>Zuñiga Ballon, Giulianno Fernando</li>
+            </ul>
+        </p>
+    </body>
+</html>
