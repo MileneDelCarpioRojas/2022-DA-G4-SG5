@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="tarea DA, HTML">
+        <meta name="author" content="SG5">
+        <meta name="description" content="Tarea de DA practica">
+        <title>Formulario de contacto</title>
+        <style>
+            form{
+                margin:0 auto;
+                width: 400px;
+
+                padding: 1em;
+                border: 1px solid #CCC;
+                border-radius: 1em;
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: #C0C0C0;
+            }
+            body{
+                background-color: #708090;
+            }
+            h1{
+                text-align:center;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            input{
+                margin:0 auto;
+                width: 370px;
+
+                padding: 1em;
+                border: 1px solid black;
+                border-radius: 1em;
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: #C0C0C0;
+            }
+            textarea{
+                margin:0 auto;
+                width: 370px;
+                height: 200px;
+                padding: 1em;
+                border: 1px solid black;
+                border-radius: 1em;
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: #C0C0C0;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <ul>
+            <label for="group">Integrantes:</label><br>
+            <li>Del Carpio Rojas, Milene Nicole</li>
+            <li>Lopez Sebastiani, Braulio Josue</li>
+            <li>Soto Sanchez, Rosario Milagros</li>
+            <li>Zuñiga Ballon, Giulianno Fernando</li>
+            </ul>
+        </p>
+        <h1 class="a">Contáctanos</h1>
+        <form action="/contacto-ayuda" method="get">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="correo">Correo</label>
+            <input type="mail" id="mail" name="mail"><br><br>
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto"><br><br>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="msg" name="message"></textarea><br><br>
+            <label for="options">Motivo principal</label><br>
+            <select name="motivo" id="motivo">
+                <option value="reclamo">Reclamo</option>
+                <option value="sugerencoa">Sugerencia</option>
+                <option value="ayuda">Ayuda</option>
+            </select><br><br>
+            <class="button"><button type="reset">Borrar todo</button>
+            <class="button"><button type="submit">Enviar</button>
+        </form>
+        
+    </body>
+    
+</html>
