@@ -1,0 +1,16 @@
+*/ toda la etiqueta primero es de color negro y tipo arial se hereda dentro de ella */
+primero {font-family: Arial; color: black;}
+
+
+/*la herencia que se aplico a la etiqueta cuerpo se anulo al establece especificamente el valor para 
+otra etiqueta */
+segundo {font-family: Arial; color: green;}
+  h3 {font-family: Verdana;}
+  p {color: blue;}
+
+/*esta es otra aplicacion de la herencia todos heredan el tamaño */
+tercero {font-size: 15px;}
+
+cuarto {font-style: italic;}
+
+quinto {letter-spacing:-1px;}

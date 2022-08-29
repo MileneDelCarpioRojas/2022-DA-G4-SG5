@@ -1,0 +1,39 @@
+/* ESTAS SON APLICACIONES DE COMBINACIONES*/
+
+/*este es una aplicacion de descendientes  */
+div p {
+  background-color: orange;
+}
+
+/*esta es otra aplicacion de descendencia */
+hhh p {
+  background-color: green;
+}
+
+
+/*esta es una aplicacion de adyacencia  */
+hola + p {
+  background-color: yellow;
+}
+
+
+ /* se le aplica solo a los hijos directos de ul*/ 
+ul > li {
+    background-color: red
+}  
+ 
+
+/* aqui es para hermanos p */
+h3 ~ p {
+    background-color: black;
+    color: yellow;
+}
+
+/*aqui es para combinados*/
+texto1~texto2{
+   color:green;}
+
+
+
+
+
