@@ -1,0 +1,30 @@
+
+div[class^="intento"] {
+  background: #ffff00;
+}
+
+
+[class^="2222"] {
+  background: #ffff00;
+}
+
+
+div[class$="1333"] {
+  background: #ffff00;
+}
+
+
+[class$="4344"] {
+  background: #ffff00;
+}
+
+
+div[class*="6565"] {
+  background: #ffff00;
+}
+
+
+
+
+
+
