@@ -1,0 +1,19 @@
+body {
+    background-color: hsl(0, 0%, 0%);
+}
+h1 {
+    background-color: hsl(0,100%,50%,40%);
+}
+
+h2 {
+    color: hsl(0, 76%, 45%); 
+    background-color:hsl(0, 100%, 100%,70%);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: hsl(0,0%,100%);
+    background-color: hsl(180,100%,50%,50%);
+}
+
+
