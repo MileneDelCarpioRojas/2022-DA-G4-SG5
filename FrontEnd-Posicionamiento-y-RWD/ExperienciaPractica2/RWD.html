@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 10%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: papayawhip;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: papayawhip;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>RESPONSIVE WEB DESIGN</h1>
+  <h3>Adaptando el RWD como ejemplo</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Tortas</div>
+    <div class="menuitem">Postres</div>
+    <div class="menuitem">Contacto</div>
+    <div class="menuitem">Ayuda</div>
+  </div>
+
+  <div class="main">
+    <h2>Cafetería de múltiple servicio</h2>
+    <p>Postres, tortas, de la mas alta calidad</p>
+    <img src="https://capriccioperu.com/wp-content/uploads/2020/04/capriccio_logo.png" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>Primera Reseña</h2>
+    <p>Los postres que ofrecen al público son muy deliciosos.</p>
+    <h2>Segunda Reseña</h2>
+    <p>Cuentan con tortas de todos los tamaños y sabores, buen servicio.</p>
+    <h2>Tercera Reseña</h2>
+    <p>Tienen precios cómodos y son bajo en azúcar.</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Todos los derechos reservados y resguardados por Capriccio </div>
+
+</body>
+</html>
