@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  padding: 20px;
+}
+.grid-item {
+  background-color: blue;
+  border: 1px solid white;
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>TABLA DE POSICIONES</h1>
+
+<p>TORNEO CLAUSURA </p>
+
+<p>PRONTO SE CONOCERA EL CAMPEON</p>
+
+<div class="grid-container">
+  <div class="grid-item">1 ALIANZA</div>
+  <div class="grid-item">2 MELGAR</div>
+  <div class="grid-item">3 CRISTAL</div>  
+  <div class="grid-item">4 CIENCIANO</div>
+  <div class="grid-item">5 GRAU</div>
+  <div class="grid-item">6 BINACIONAL</div>  
+  <div class="grid-item">7 CAIMANES</div>
+  <div class="grid-item">8 PIRATAS</div>
+  <div class="grid-item">9 UCV</div>  
+</div>
+
+</body>
+</html>
+
+
