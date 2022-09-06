@@ -1,0 +1,54 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Iphone First-UI-KIT How-to-use-rotary How-to-use-rotary"
+    "Our-Keyboard IMac-Retina IMac-Retina ICloud"
+    "Games-Passion MuchBetter MuchBetter ICloud";
+}
+
+.How-to-use-rotary { grid-area: How-to-use-rotary; }
+.How-to-use-rotary { background-image: url(imagenes/Howtouse.png); }
+.How-to-use-rotary  { background-size: cover; }
+
+.ICloud { grid-area: ICloud; }
+.ICloud { background-image: url(imagenes/Icloud.png); }
+.ICloud  { background-size: cover; }
+
+.IMac-Retina { grid-area: IMac-Retina; }
+.IMac-Retina { background-image: url(imagenes/Imacretina.png); }
+.IMac-Retina { background-size: cover; }
+
+.MuchBetter { grid-area: MuchBetter; }
+.MuchBetter { background-image: url(imagenes/muchbetter.png); }
+.MuchBetter { background-size: cover; }
+
+.Iphone { grid-area: Iphone; }
+.Iphone { background-image: url(imagenes/Iphone.png); }
+.Iphone { background-size: cover; }
+
+.Our-Keyboard { grid-area: Our-Keyboard; }
+.Our-Keyboard { background-image: url(imagenes/OurKeyboard.png); }
+.Our-Keyboard { background-size: cover; }
+
+.Games-Passion { grid-area: Games-Passion; }
+.Games-Passion { background-image: url(imagenes/gamespassion.png); }
+.Games-Passion { background-size: cover; }
+
+.First-UI-KIT { grid-area: First-UI-KIT; }
+.First-UI-KIT { background-image: url(imagenes/FirstUI.png); }
+.First-UI-KIT { background-size: cover; }
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+
+
+
