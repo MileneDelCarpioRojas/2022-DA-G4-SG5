@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  background-color: red;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+</style>
+</head>
+<body>
+
+<h1>CAPITALES</h1>
+
+<div class="grid-container">
+  <div class="item1">LIMA</div>
+  <div class="item2">QUITO</div>
+  <div class="item3">BA</div>  
+  <div class="item4">CARACAS</div>
+  <div class="item5">MONTEVIDEO</div>
+  <div class="item6">SANTIAGO</div>
+  <div class="item7">BOGOTA</div>
+  <div class="item8">ASUNCION</div>  
+</div>
+
+<p>CAPITALES DE PAISES DE SUDAMERICA</p>
+
+</body>
+</html>
+
+
