@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: PERU; }
+.item2 { grid-area: ARGENTINA; }
+.item3 { grid-area: BOLIVIA; }
+.item4 { grid-area: BRASIL; }
+.item5 { grid-area: CHILE; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'PERU PERU PERU PERU PERU PERU'
+    'ARGENTINA BOLIVIA BOLIVIA BOLIVIA BOLIVIA BRASIL'
+    'ARGENTINA CHILE CHILE CHILE CHILE BRASIL';
+  grid-gap: 15px;
+  background-color: green;
+  padding: 15px;
+}
+
+.grid-container > div {
+  background-color: rgba(55, 100, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>PAISES DE LATINOAMERICA</h1>
+
+<p>ESTOS PAISES SE ENCUENTRAN EN SUDAMERICA</p>
+
+
+<div class="grid-container">
+  <div class="item1">PERU</div>
+  <div class="item2">ARGENTINA</div>
+  <div class="item3">BOLIVIA</div>  
+  <div class="item4">BRASIL</div>
+  <div class="item5">CHILE</div>
+</div>
+
+</body>
+</html>
