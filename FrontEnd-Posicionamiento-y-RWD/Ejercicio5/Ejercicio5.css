@@ -1,0 +1,64 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row dense;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "botas botas short-largo"
+    "botas botas chaleco-verde"
+    "short-corto Correa Correa"
+    "chaleco-rojo Correa Correa"
+    "camisa camisa botas-chacra"
+    "camisa camisa mochila";
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+}
+
+.short-largo { grid-area: short-largo; }
+.short-largo { background-image: url(imag/shortlargo.png); }
+.short-largo { background-size: cover; }
+
+.chaleco-verde { grid-area: chaleco-verde; }
+.chaleco-verde { background-image: url(imag/chalecoverde.png); }
+.chaleco-verde { background-size: cover; }
+
+.short-corto { grid-area: short-corto; }
+.short-corto { background-image: url(imag/shortcorto.png); }
+.short-corto { background-size: cover; }
+
+.chaleco-rojo { grid-area: chaleco-rojo; }
+.chaleco-rojo { background-image: url(imag/chalecorojo.png); }
+.chaleco-rojo { background-size: cover; }
+
+.Correa { grid-area: Correa; }
+.Correa { background-image: url(imag/Correa.png); }
+.Correa { background-size: cover; }
+
+.botas-chacra { grid-area: botas-chacra; }
+.botas-chacra { background-image: url(imag/botasnegras.png); }
+.botas-chacra { background-size: cover; }
+
+.mochila { grid-area: mochila; }
+.mochila { background-image: url(imag/mochila.png); }
+.mochila { background-size: cover; }
+
+.camisa { grid-area: camisa; }
+.camisa { background-image: url(imag/camisa.png); }
+.camisa { background-size: cover; }
+
+.botas { grid-area: botas; }
+.botas { background-image: url(imag/botas.png); }
+.botas { background-size: cover; }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
