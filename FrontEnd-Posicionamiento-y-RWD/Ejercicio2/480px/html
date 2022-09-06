@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI</title>
+    <style>
+        .title {
+            background-color: WHITE;
+            color: BLUE;
+            text-align: center;
+            border: 20px solid blue;
+            
+        }
+
+        .INFO{
+            background-color: blue;
+            display:flex;
+            justify-content: center;
+        }
+
+        .INFO div{
+            margin: 10px;
+            text-align: center;
+            background-color: white;
+            border: 3px solid black;
+            width: 200px;
+            height: 400px;
+        }  
+   
+
+        button{
+            margin: 5px;
+            border: 3px solid rgb(219, 200, 209);
+            color: white;
+            background-color: rgb(112, 17, 9);
+
+
+        }
+        @media only screen and (max-width: 480px) {
+            .INFO {
+            display:flex;
+            flex-direction:column;
+            }
+            .INFO div{
+            width: 250px;
+            height: 250px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="contenido">
+       <div class="title">
+       <p>BIENVENIDO A LA PAGINA OFICIAL DE ALIANZA LIMA</p>
+       <h1>CLUB ALIANZA LIMA</h1>
+       </div>
+       <div class="INFO">
+       <div>
+       <h2>Alianza Lima</h2>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Escudo_Alianza_Lima.svg/1200px-Escudo_Alianza_Lima.svg.png"  width="128" height="128">
+       <p>El Club Alianza Lima, conocido como Alianza Lima o simplemente Alianza.</p>
+       </div>
+       <div>
+       <h2>COMANDO SVR</h2>
+       <img src="https://i.scdn.co/image/ab67616d0000b27367f55aa30eb0760e2083bb13" width="128" height="128">
+       <p>El Comando Sur, oficialmente llamada Comando Sur, la Fiel y Leal #12</p>
+       </div>
+       <div>
+       <h2>Matute</h2>
+       <img src="https://elcomercio.pe/resizer/3snArI4S8PSJpZDwYqHi9H-MAPk=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z634JHM4JZF73O4OICXHYIK4MM.jpg" width="150" height="110">
+       <p>El Estadio Alejandro Villanueva, anteriormente llamado Estadio Alianza Lima y conocido popularmente como Matute </p>    
+       </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+</html>
