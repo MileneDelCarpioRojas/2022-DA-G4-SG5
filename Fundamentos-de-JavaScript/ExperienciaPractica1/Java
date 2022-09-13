@@ -1,0 +1,29 @@
+let mivar ="ALI";
+let miNum = 123;
+let miBool = true;
+let miArreglo =[10,20,30,40,50];
+let miObjeto={nombre:"BRAULIO",edad:20,DNI:74130237}
+const miConstante=200;
+for (i=0;i<miArreglo.length; i++){
+console. log (miArreglo[i]);
+}
+if (miNum===123)
+console. log ("Iguales");
+else console. log("difernetes");
+
+function miPotencia(numero){
+    return numero * numero;
+}
+
+
+function mostrar(mensaje){
+    console.log("FELIZ DIA UCSM"+mensaje);
+}
+console.log(miPotencia(4));
+mostrar("Alumno");
+console.log(miObjeto.nombre);
+console.log(miConstante);
+
+
+
+
