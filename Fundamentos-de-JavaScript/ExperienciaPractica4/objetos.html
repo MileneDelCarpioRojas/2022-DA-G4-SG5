@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http.equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device.width, initial-scale=1.0">
+        <title>Objeto Window</title>
+        <script>
+            const persona = {
+                nombre :'Ana', 
+                edad: 32, 
+                profesion: 'Psicologa'};
+            function constructor (persona){
+                persona.nombre = " ";
+                persona.edad = 0;
+                persona.profesion = " ";
+            }
+            function creator (nombre, edad) {
+            const usuario = Object.create(persona);
+            usuario.persona.nombre = nombre;
+            usuario.persona.edad= edad;
+            return usuario;
+        } ;
+
+            console.log(Object.values(persona));
+        </script>
+    </head>
+<body>
+<h1>Creación del Objetos</h1>
+<h2>Agregando Propiedades a los Objetos</h2>
+<body>
+</html>
