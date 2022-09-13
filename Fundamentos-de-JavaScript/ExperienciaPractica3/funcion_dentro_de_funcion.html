@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Funcion como argumento de otra funcion </title>
+	<script>
+
+	var num1 = prompt("Ingrese un numero del 1 al 5");
+	var num2 = prompt("Ingrese un numero del 1 al 5");
+
+	function calcular(func, x, y)  { 
+    	return func(x, y); }
+
+	let multiplicar= function(a, b)  {
+    	return a * b;  }
+
+	let respuesta = calcular(multiplicar, num1, num2);
+	document.write("la multiplicacion de "+num1+" con "+num2+ " es ",respuesta+ "<br>");
+
+
+	let potencia = function(a, b)  { 
+          return Math.pow(a, b); }
+
+	respuesta = calcular(potencia, num1, num2);
+	document.write("la potencia de "+num1+" elevado a "+num2+ " es ",respuesta+ "<br>");
+
+	document.write("Una funcion fue llamada como argumento dentro de otra funcion");
+
+	</script>
+
+</head>
+<body>
+</body>
+</html>
