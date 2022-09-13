@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>una funcion y su ambito global</title>
+	<script>
+	var persona="Jorge";
+	function hola_amigos(){
+		let saludar_amigo = "Pepe";
+		console.log("hola: ",saludar_amigo);   // esto imprime hola: Pepe
+	}
+
+	hola_amigos()
+
+	// console.log(saludar_a);	esta instruccion generaria un error por que la variable saludar_a
+	//                                                    no es global sino local y solo puede ser llamada 
+	//			dentro de la funcion hola_amigos		
+	console.log(persona);	// aqui la variable si es global y si puede ser ejecutada sin error
+
+	</script>
+</head>
+<body>
+<p> aqui se da un ejemplo de una funcion y su ambito, ver la consola<p> 
+</body>
+</html>
