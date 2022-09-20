@@ -1,0 +1,19 @@
+$sizes: 100px, 50px, 35px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}   
+
+$icons: ("ALIANZA": "\f2", "LIMA": "\f6", "AREQUIPA": "\f12f");
+
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
