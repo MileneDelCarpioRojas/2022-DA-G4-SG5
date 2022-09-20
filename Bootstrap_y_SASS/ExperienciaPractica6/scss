@@ -1,0 +1,26 @@
+
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+  }
+  
+  .myArticle {
+    @include bordered(blue, 1px);  
+  }
+  
+  .myNotes {
+    @include bordered(red, 2px);
+  }     
+
+
+  
+@function triplicar(num) {
+  @return $num * 3;
+  }
+  
+  .Farfan {
+    width: triplicar(20)#{px};
+  }
+  
+  .Barcos {
+    height: triplicar(15)#{px};
+  }   
