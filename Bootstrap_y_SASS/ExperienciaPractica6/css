@@ -1,0 +1,14 @@
+.myArticle {
+    border: 1px solid blue;
+  }
+  
+  .myNotes {
+    border: 2px solid red;
+  }      
+.Farfan {
+    width: 60 px;
+  }
+  
+.Barcos {
+    height: 45 px;
+  }      
