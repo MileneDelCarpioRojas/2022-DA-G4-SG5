@@ -1,0 +1,5 @@
+body{
+    background-image: url(‘https://clubalianzalima.com.pe/paisaje.jpg’);
+    font-size: 15px;
+
+   }
