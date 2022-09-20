@@ -1,0 +1,6 @@
+$url: 'https://clubalianzalima.com.pe';
+body{
+ background-image: url(‘#{$url}/logo.jpg’);
+ font-size:  5 + 10 #{px};
+ 
+}
