@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Sesion 06</title>
+        <link rel="icon" href="sesion6\sesion06\public\favicon.ico"/>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Postres(){
+            return(
+                <div>
+                <h1>Postres disponibles</h1>
+                <ul><li>torta</li><li>helado</li><li>gelatina</li></ul>
+            </div>
+            )
+        }
+        ReactDOM.render(<Postres />, document.getElementById('root'))
+    </script>
+</body>
+</html>
