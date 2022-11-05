@@ -1,0 +1,11 @@
+import sqlite3
+conn = sqlite3.connect('ORDERS.db')
+print("Base de datos abierta satisfactoriamente");
+"""creacion objeto cursor"""
+cur = conn.cursor ()
+cur.execute("SELECT * FROM orders;")
+three_results = cur.fetchmany(3)
+print(three_results)
+print("Consulta realizada satisfactoriamente");
+conn.close() 
+
