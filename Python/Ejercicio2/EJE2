@@ -1,0 +1,55 @@
+class Producto():
+    def __init__(self, codigoPro, nombre, fechaVencimiento, precio):
+        self.codigoPro = codigoPro
+        self.nombre = nombre
+        self.fechaVencimiento = fechaVencimiento
+        self.precio = precio
+
+    def mostrarProducto(self):
+        show = "--------PRODUCTO---------\nN° Código del Producto: {}\nNombre del Producto: {}\nFecha de vencimiento del Producto: {}\nPrecio del Producto: S/.{}\n"
+        print(show.format(self.codigoPro,self.nombre,self.fechaVencimiento,self.precio))
+
+codigo = int(input("Ingrese codigo del Producto: "))
+Nombre = input("Ingrese nombre del Producto: ")
+FechaVen = input("Ingrese fecha de vencimiento del Producto: ")
+Precio = int(input("Ingrese precio del Producto: "))
+
+
+Producto1 = Producto(codigo,Nombre,FechaVen,Precio)
+Producto1.mostrarProducto()
+
+class Venta():
+    def __init__(self, Venta, Comprobante):
+        self.Venta = Venta
+        self.Comprobante = Comprobante
+        
+
+    def mostrarVenta(self):
+        showV = "|||||||||||VENTA|||||||||||\nN° Venta: {}\nComprobante: {}\n"
+        print(showV.format(self.Venta,self.Comprobante))
+VENTA = int(input("Ingrese venta: "))
+COMPRO = int(input("Ingrese comprobante: "))
+
+
+
+Venta1 = Venta(VENTA,COMPRO)
+Venta1.mostrarVenta()
+        
+class Cliente():
+    def __init__(self, dni, nombreCompleto, metodoPago, saldo):
+        self.dni = dni
+        self.nombreCompleto = nombreCompleto
+        self.metodoPago = metodoPago
+        self.saldo = saldo
+
+    def mostrarCliente(self):
+        sh = "--------CLIENTE---------\nDNI: {}\nNombre completo: {}\nMetodo pago: {}\nSaldo: S/.{}"
+        print(sh.format(self.dni,self.nombreCompleto,self.metodoPago,self.saldo))
+
+DNI = int(input("Ingrese su  DNI: "))
+NOMBRE = input("Ingrese nombre: ")
+PAGO = input("Ingreasar metodo de pago(Efectivo/Tarjeta/YAPE/PLIN): ")
+SALDO = int(input("Ingrese monto: "))
+
+Cliente1 = Cliente(DNI,NOMBRE,PAGO,SALDO)
+Cliente1.mostrarCliente()
