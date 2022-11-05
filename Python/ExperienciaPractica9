@@ -1,0 +1,14 @@
+#!/usr/bin/python
+import sqlite3
+conn = sqlite3.connect('ORDERS.db')
+print("Base de datos abierta satisfactoriamente");
+cur = conn.cursor ()
+
+
+cur.execute("""CREATE TABLE IF NOT EXISTS orders(
+ orderid INT PRIMARY KEY,
+ date TEXT,
+ userid TEXT,
+ total TEXT);
+""")
+conn.commit() 
