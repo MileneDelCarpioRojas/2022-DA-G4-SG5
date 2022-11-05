@@ -1,0 +1,117 @@
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+function Header(){
+   return (<header><h1>JUGADORES</h1></header>,
+   <ul>
+    <li>FARFAN</li>
+    <li>BARCOS</li>
+    <li>AGUIRRE</li>
+   </ul>
+   );
+  } 
+function Main(){ return (<main><h2>PROGRAMACION</h2></main>);} 
+
+//iteradores
+function Red(props){
+  return <li> PROXIMOS RIVALES{props.socia}</li>
+}
+function Media(){
+  const redes = [':  Vallejo  12/08/22', ':  Muni 20/08/22', ':  Melgar 30/08/22', ':  Cristal 1/09/22', ':  U 12/09/22' ];
+  return (
+    <ul>
+      {redes.map((argCar) => <Red socia = {argCar}/>)}
+    </ul>
+  );
+}
+
+function Camiseta() {
+  const [color, setColor] = useState({
+    nombre: "Chicho Salas",
+    nacionalidad: "PERUANA",
+    color: "AZUL",
+    color2: "Blanco",
+    color3:"Morada"
+  });
+
+  const nuevoCOlor = () => {
+    setColor(antes => {
+      return { ...antes, color: "MORADA" }
+    });
+  }
+
+  return (
+    <>
+    
+      <p>
+        Nuestro entrenador  {color.nombre} es de nacionalidad {color.nacionalidad}. Nuestra camiseta para el siguiente partido es de color {color.color} y {color.color2}. 
+        Si presionas el boton veras el nuevo color de la camiseta para el siguiente partido
+        </p>
+        <p>
+          Presiona el siguiente boton para ver el cambio de camiseta para el partido de visitante
+        </p>
+      <button
+        type="button"
+        onClick={nuevoCOlor}
+      >CAMBIAR COLOR DE CAMISETA</button>
+    </>
+  )
+}
+ 
+ class SegundoConEstado extends React.Component{
+  constructor(props){
+    super(props);
+    this.state ={
+      contador:1,
+      mensaje:""
+    }
+  };
+
+  miSuma = () =>{
+    
+    if(this.state.contador % 2 == 0){
+      console.log(this.state.contador);
+      
+      this.setState({
+        contador : this.state.contador + 1,
+        mensaje : "EL RIVAL FALLO PENAL"        
+      });
+    }
+    else
+      this.setState({
+        contador : this.state.contador + 1,
+        mensaje : "GOL DE ALIANZA LIMA"        
+      });
+    
+  }
+
+  render(){
+    return (
+      <div>
+        <h3 onClick={this.miSuma}>CLICK PARA ACTUALIZAR EL MARCADOR DEL PARTIDO</h3>
+        <h3>{this.state.contador}</h3>
+        <h3>{this.state.mensaje}</h3>
+      </div>
+    );
+  }
+  
+}
+
+ 
+
+function Agrupador(props){ 
+  console.log(props); 
+return (<div>{props} 
+<Header/> 
+<Main/> 
+<Media/>
+<Camiseta/>
+<br></br>
+<SegundoConEstado/>
+</div>); 
+} 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(Agrupador('INFO ALIANZA'));
+reportWebVitals();
