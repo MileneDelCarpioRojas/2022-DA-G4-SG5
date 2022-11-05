@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+function Header(){return (<header>Alianza Lima</header>);}
+function Footer(){return (<footer>Arriba Alianza</footer>);}
+function  Main(){return (<main>Mañana se gana</main>);}
+
+function Comando(miParam){
+  console.log(miParam);
+  return (<div>{miParam}
+  <Header/>
+  <Footer/>
+  <Main/>
+  </div>);
+}
+const root= ReactDOM.createRoot(document.getElementById('root'));
+root.render(Comando('ARRIBA ALIANZA'))
