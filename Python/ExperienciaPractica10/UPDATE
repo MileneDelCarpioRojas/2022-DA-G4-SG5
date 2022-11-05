@@ -1,0 +1,25 @@
+import sqlite3
+conn = sqlite3.connect('ORDERS.db')
+print("Base de datos abierta satisfactoriamente");
+"""creacion objeto cursor"""
+cur = conn.cursor ()
+
+"""creacion tabla orders"""
+cur.execute("""CREATE TABLE IF NOT EXISTS orders(
+ orderid INT PRIMARY KEY,
+ date TEXT,
+ userid TEXT,
+ total TEXT);
+""")
+conn.commit()
+conn.execute("UPDATE ORDERS set TOTAL = 25000.00 where ORDERID = 1")
+conn.commit()
+print("Número total de registros actualizados: ", conn.total_changes)
+cursor = conn.execute("SELECT ORDERID, DATE, USERID, TOTAL from ORDERS")
+for row in cursor:
+ print("ORDERID = ", row[0])
+ print("DATE = ", row[1])
+ print("USERID = ", row[2])
+ print("TOTAL = ", row[3], "\n")
+print("Actualización realizada satisfactoriamente");
+conn.close()
