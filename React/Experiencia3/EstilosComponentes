@@ -1,0 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+function ALI(){
+  const objetoEstilo={
+    color:"blue",
+    fontSize:"40px"
+  }
+
+
+  return (
+    <div>
+      <h2 style={objetoEstilo}>ARRIBA ALIANZA</h2>
+      <h2 style={{color:"green"}}>SALTA COMANDO</h2>
+      <h1>FARFAN</h1>
+    </div>
+  );
+}
+const root= ReactDOM.createRoot(document.getElementById('root'));
+root.render(<ALI/>);
