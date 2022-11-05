@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de registro - Mi web</title>
+</head>
+<body>
+
+<h1>Formulario de registro</h1>
+
+<form action="" method="get">
+<p>
+Nombre: <input type="text" name="nombre" maxlength="50" />
+</p>
+
+<p>
+Apellidos: <input type="text" name="apellidos" maxlength="50" />
+</p>
+<p>
+    Direccion: <input type="text" name="direccion" maxlength="50" />
+</p>
+<p>
+    Correo electronico: <input type="text" name="correo" maxlength="100" />
+</p>
+<p>
+    Contraseña: <input type="password" name="Contraseña" maxlength="100" />
+</p>
+<p>
+    Confirmar Contraseña: <input type="password" name="Contraseña" maxlength="100" />
+</p>
+<p>
+    Fecha de nacimiento: <input type="date" name="fecha" maxlength="100" />
+</p>
+<p>
+
+Sexo: <input type="radio" name="sexo" value="h" /> hombre <input type="radio" name="sexo" value="m" /> mujer
+</p>
+
+
+<p>
+Por favor, escoger los temas de interes:<input type="checkbox" name="condiciones" /> Futbol<input type="checkbox" name="condiciones" /> Voley
+<input type="checkbox" name="condiciones" /> Basket <input type="checkbox" name="condiciones" /> Atletismo
+</p>
+<p>
+   Equipos de preferencia:<input type="checkbox" name="condiciones" /> Alianza Lima<input type="checkbox" name="condiciones" /> Real Madrid
+    <input type="checkbox" name="condiciones" /> Peru <input type="checkbox" name="condiciones" /> Golden 
+    </p>
+<p>
+<input type="submit" value="Enviar" />
+</p>
+</form>
+
+</body>
+</html>
