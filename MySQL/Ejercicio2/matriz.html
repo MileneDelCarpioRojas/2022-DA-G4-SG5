@@ -1,0 +1,65 @@
+<html>   
+ <head>
+  <title> Analizando Matriz es o no Perfecta </title>
+   <script >
+     var a=new Array(3)
+   
+    function analiza_matriz()
+    {
+        for(i=1;i<=3;i++)
+           {a[i]=[0,0,0,0]
+              for(j=1;j<=3;j++)
+                {  
+                  a[i][j]=parseFloat(document.matriza[3*i+j-4].value)
+                } 
+            }
+
+      if (a[1][1] == a[2][2] && a[1][1] == a[3][3])
+         {
+            document.write("Los elementos de la diagonal principal de la matriz tienen el mismo valor "+"<br />"+"<br />");
+            document.write("Elemento (1,1) = " + a[1][1]+"<br />");
+            document.write("Elemento (2,2) = " + a[2][2]+"<br />");
+            document.write("Elemento (3,3) = " + a[3][3]+"<br />"+"<br />");	
+            document.write("La matriz es perfecta"+"<br />");
+         }
+         else
+         { 
+             document.write("La diagonal principal esta formada por elementos diferentes"+"<br />"+"<br />" );
+             document.write("Elemento (1,1) = " + a[1][1]+"<br />");
+             document.write("Elemento (2,2) = " + a[2][2]+"<br />");
+             document.write("Elemento (3,3) = " + a[3][3]+"<br />"+"<br />");
+             document.write("La matriz no es perfecta"+"<br />");
+             
+         }
+       
+    }     
+     
+    </script>
+ </head>
+  
+<body text=black bgcolor=lightblue>
+<table border="4">
+   <td> Matriz Cuadrada (3x3)  
+</table>
+
+<P>
+
+<form name="matriza">
+<table border="1">
+   <td> Matriz A    
+</table>  
+  <BR>
+       <input type="text" size="4">
+       <input type="text" size="4">
+       <input type="text" size="4"><BR>
+       <input type="text" size="4">
+       <input type="text" size="4">
+       <input type="text" size="4"><BR>
+       <input type="text" size="4">
+       <input type="text" size="4">     
+       <input type="text" size="4"><BR><BR>
+       <input type="button" value="Analizar matriz" onClick=" analiza_matriz()"> 
+</form>
+
+ </body>
+</html>
