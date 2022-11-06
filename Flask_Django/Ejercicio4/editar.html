@@ -1,0 +1,12 @@
+{% extends "plantilla.html" %} 
+{% block titulo %} Editar Especialidad {% endblock %}
+{% block contenido %}
+<div class="card">
+    <div class="card-header"> Editar Especialidad </div>
+
+    <div class="card-body">
+        <h4 class="card-title">Datos de la Especialidad</h4>
+        {% include 'forms.html' %} <!--Llamando al form.html-->
+    </div>
+</div>
+{% endblock %}

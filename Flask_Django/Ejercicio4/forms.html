@@ -1,0 +1,28 @@
+<!--Agregando un formulario-->
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %} <!-- el form le pertenece a esta app-->
+    {% for campo in formulario %} <!-- recibe el formulario-->
+    <div class="mb-3">
+        <label for="" class="form-label">{{campo.label}}</label>
+
+        <!-- para mostrar la imagen cuando editamos-->
+        {% if campo.field.widget.input_type == 'file' and campo.value %}
+            <br/>
+            <img src="{{MEDIA_URL}}/foto/{{campo.value}}" width="100"
+            height="auto" alt="">
+        {% endif %}
+
+        <!--input para el campo-->
+        <input type="{{ campo.field.widget.input_type }}"
+        class="form-control" name="{{ campo.name }}" id=""
+        aria-describedby="helpId"
+        placeholder=""
+        value="{{ campo.value | default:''}}"> 
+    </div>
+    <div class="col-12 help-text">{{campo.error}}</div>
+    {% endfor %}
+
+    <input name="" id="" class="btn btn-success" type="submit" value="Guardar">
+    <a name="" id="" class="btn btn-dark" href="{% url 'inicio' %}" role="button">Cancelar</a>
+</form>
+    

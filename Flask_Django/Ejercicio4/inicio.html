@@ -1,0 +1,54 @@
+{% extends "plantilla.html" %} <!--Usando el template-->
+{% block titulo %} Especialidades {% endblock %} <!--uso de block titulo -->
+{% block contenido %} <!--uso de block contenido -->
+<div class="card">
+    <div class="card-header">
+        <!--link a crear.html -->
+        <a name="" id="" class="btn btn-dark" 
+        href="{% url 'crear'%}" role="button">Agregar Especialidad</a>
+    </div>
+
+    <div class="card-body">
+        <h4 class="card-title"> Especialidades Ingenieria de Sistemas</h4>
+        <!--colocando tabla-->
+        <div class="table-responsive">
+            <!--creacion de tabla -->
+            <table class="table table" style="table-layout:fixed">
+                <thead>
+                <tr>
+                    <!--columnas -->
+                    <th scope="col" width="10%">N°</th>
+                    <th scope="col" width="20%">Especialidad</th>
+                    <th scope="col" width="40%">Descripcion</th>
+                    <th scope="col" width="10%">Imagen</th>
+                    <th scope="col" width="20%">Editar</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    {% for partner in patrocinador %} 
+                    <!--filas -->
+                    <tr class="">
+                        <td scope="row" >{{ partner.id }}</td>
+                        <td class="p-4">{{ partner.especialidad }}</td>
+                        <td>{{ partner.descripcion }}</td>
+                        <td>
+                            <!--imagen url-->
+                            <img src="{{ partner.foto.url }}" width="auto"height="100">
+                        </td> 
+                        <td> 
+                            <!--botones-->
+                            <a name="" id="" class="btn btn-secondary" 
+                            href="{% url 'editar' partner.id %}" role="button">Editar</a>
+
+                            <a name="" id="" class="btn btn-secondary" 
+                            href="{% url 'eliminar' partner.id %}" role="button">Borrar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
